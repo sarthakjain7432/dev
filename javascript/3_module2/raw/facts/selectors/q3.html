@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* children combinators*/
+        div>p{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!--make me blue-->
+    <div>
+        <p>
+            <span>am the direct child</span> 
+        </p>
+    </div>
+
+    <div>
+        <span>
+            <p>
+                <span>am the indirect child</span> 
+            </p>
+        </span>
+    </div>
+</body>
+</html>

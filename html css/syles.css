@@ -1,0 +1,25 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 3rem;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;           /*ek k neeche ek ki jangah ek k aage ek kar deta hai*/
+    align-items: center;     /*vertically align */
+    justify-content: space-between;    /*horizontally align*/
+} 
+.description{
+    display: flex;
+}
+ul{
+    display: flex;
+}
+.showcase>image{
+    height: 90vh;
+}
+
