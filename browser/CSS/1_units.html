@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--Units -> absolute(not scalable,not responsive) = px , relative(scalable,responsive) = rem, em,
+             vh, vw, %.
+1) rem = relative to html element and its default font size is 16px which is defined by majority
+of browsers                       1 rem = 16px, 2rem = 32 px and so on.
+2) em = relative to element itself , agar kisi element pe font size default na ho to ye apne parent
+k font size ke hisab se abjust ho jaega
+3) vh = relative to viewport height
+eg - 10 vh = 10 % of viewport height.
+4) vw = relative to viewport width
+eg - 20 vw = 20 % of viewport width.
+5) % relative to its parent element
+eg - div2 is child div of div1 and div1 has 10px then 10% in div2 = 10% of 10 px-->
+    <style>
+        .px{
+            font-size: 30px;
+            background-color: aqua;
+        }
+        .rem{
+            font-size: 3rem;
+            background-color: blueviolet;
+        }
+        .vh-vw{
+            font-size: 7vh;
+            background-color: coral;
+        }
+        .parent{
+            height: 10rem;
+            width: 30rem;
+            background-color: cadetblue;
+        }
+        .child{
+            background-color: cornflowerblue;
+            width: 50%;
+            height: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="px">px</div>
+    <div class="rem">rem</div>
+    <div class="vh-vw">vh-vw</div>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>

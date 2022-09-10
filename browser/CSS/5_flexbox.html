@@ -1,0 +1,89 @@
+<!-- play flexbox froggy game to understand it better -->
+<!-- there new property order starts from level 14 -->
+<!-- there new property align-self starts from level 16 -->
+<!-- there new property flex-wrap starts from level 18 -->
+<!-- there new property flex-flow starts from level 20 -->
+<!-- there new property align-content starts from level 21 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .flex-container{
+            width: 90vw;
+            height: 80vh;
+            margin: auto;
+            background-color: lightslategray;
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* justify-content: center; */
+            /* justify-content: flex-start */
+            /* justify-content: flex-end; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            /* align-items: center; */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: stretch; doesn't work bcoz humne box ki height ko define kar  */
+            /* rkha hai agar hum usse comment out kar denge tab ye property kaam kar jaegi  */
+
+        }
+
+        .box {
+            height: 7rem;
+            /* height: 10rem; */
+            width: 7rem;
+            /* width: 30rem; */
+
+        }
+    
+        .box-1 {
+            background-color: lightblue;
+            /* flex-grow: 1; */
+            /* flex-shrink: 1; */
+        }
+    
+        .box-2 {
+            background-color: lightcoral;
+            /* flex-grow: 2; */
+            /* flex-grow: 1; */
+            /*flex-shrink: 2; jski value zada vo zada shrink hoga*/
+        }
+    
+        .box-3 {
+            background-color: lightgreen;
+        }
+    
+        .box-4 {
+            background-color: lightseagreen;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="flex-container">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+    </div>
+    
+</body>
+</html>
