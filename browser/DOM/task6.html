@@ -1,0 +1,36 @@
+<!-- pic related to this is in my phone -->
+<!-- Google and resolve -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cell{
+            border: 1px solid;
+            margin: auto;
+            margin-top: 10rem;
+            height: 20rem;
+            width: 20rem;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="cell"></div>
+    <script>
+        //jail in the mouse
+        //Q -> you are given an empty cell. Write a script that whenever the mouse enters the cell jail should be drawn 
+        //over it and it should be removed once it leaves
+        let cell = document.querySelector(".cell");
+        cell.addEventListener("mouseenter",(e)=>{
+            cell.style.backgroundImage = "url(./2022-Ford-Mustang-Shelby-GT500-014-1600.jpg)";
+        })
+        cell.addEventListener("mouseleave",(e)=>{
+            cell.style.backgroundImage = "none";
+        })
+    </script>
+</body>
+</html>

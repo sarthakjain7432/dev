@@ -1,0 +1,10 @@
+<!-- Q -> the following code is broken. even when clicked on blue its alerted that pink is clicked -->
+<!-- pics related to this is in my phone -->
+<!-- browser event -->
+<script>
+    let pink = document.querySelector(".pink");
+    pink.addEventListener("click", function(e){
+        if(e.target === e.currentTarget)
+        alert("pink was clicked");
+    })
+</script>
