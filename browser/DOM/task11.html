@@ -1,0 +1,45 @@
+<!-- Resolve logically via DOM methods and properties -->
+<!-- pics related to this is in my phone -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pink">
+        <div class="green">
+            <div class="blue">
+                <div class="yellow"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Q -> Write a script using the method querySelector that goes into lowest depth div and deletes it. 
+        // Alternatively also write one line non recursive solution using querySelectorAll
+        let divElem = document.querySelector("div");
+
+        //Iterative
+        //while(divElem.children.length > 0){ //on pink divElem.children give green div which has two divs so divElem
+            //divElem = divElem.children[0];  //divElem.children.length will be 2
+        //}
+        //divElem.remove();
+
+        //Recursive
+        // function removeDeepest (divElem){
+        //     if(divElem.children.length > 0)
+        //     removeDeepest(divElem.children[0]);
+        //     else{
+        //         divElem.remove();
+        //     }
+        // }
+        // removeDeepest(divElem);
+
+        //One-Liner
+        let allDivElems = document.querySelectorAll("div");
+        allDivElems[3].remove();
+    </script>
+</body>
+</html>
