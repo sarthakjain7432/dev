@@ -1,0 +1,39 @@
+<!-- implement loading animations -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="balls">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+    </div>
+    <script>
+        // Q -> Make a loading animation using the above 5 balls and using JS
+        let allBalls = document.querySelectorAll(".ball");
+        function animateBalls(idx){
+            idx = idx % allBalls.length;
+            let curBall = allBalls[0]; //current ball
+            let prevBall;
+            if(idx === 0) prevBall = allBalls[allBalls.length - 1];
+            else prevBall = allBalls[idx - 1];
+
+            curBall.style.opacity = 0;//(hide) // takes value between 0 and 1, 0 se completely hide ho jaata hai and 1 se 
+                                       // completely visible
+            prevBall.style.opacity = 1;//(display)
+
+            setTimeout(() => {       //provide delay
+                animateBalls(idx+1);
+            },200)
+        }
+        animateBalls(0);
+    </script>
+</body>
+</html>
