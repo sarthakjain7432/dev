@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.toolbox-cont {
+    height: 5rem;
+    background-color: #4b4b4b;
+    display: flex;
+    align-items: center;
+}
+.toolbox-cont > * {  /*selects priority-cont and action-btn-cont */
+    margin-left: 4rem; 
+    border-radius: 2px;
+}
+.toolbox-priority-cont {
+    height: 3.5rem;
+    width: 16rem;
+    background-color: #3d3d3d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.action-btn-cont {
+    height: 3.5rem;
+    width: 8rem;
+    background-color: #3d3d3d;
+    display: flex;
+}
+.action-btn-cont > * {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #d1d8e0;
+}
+.color {
+    height: 1.2rem;
+    width: 2.5rem;
+    background-color: lightsalmon;
+    border-radius: 2px;
+}
+.lightpink {
+    background-color: lightpink;
+}
+.lightblue {
+    background-color: lightblue;
+}
+.lightgreen {
+    background-color: lightgreen;
+}
+.black {
+    background-color: black;
+}
+.action-btn-cont > *:hover {
+    background-color: #485460;
+}
+.modal-cont {
+    height: 50vh;
+    width: 45vw;
+    background-color: lightblue;
+    position: absolute;
+    top: calc((100vh - 50vh)/2); /*calc - units calculate kartega, 100vh/2 ko px me automatically convert kar dega */
+    /* 100vh - 10rem pic is in my phone */
+    left: calc((100vw - 45vw)/2);
+    display: none;
+}
+.textarea-cont {
+    height: 100%;
+    width: 75%;
+    border: none;
+    outline: none; /*to avoid black outline which show after clicking inside textarea*/
+    background-color: #d2dae2;
+    resize: none; /*to avoid resize icon on bottom right corner*/
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+.priority-colors-cont {
+    height: 100%;
+    width: 25%;
+    background-color: #4b4b4b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.priority-color {
+    height: 3rem;
+    width: 55%;
+}
+.border {
+    border: 5px solid #d1d8e0;
+}
+.ticket-cont {
+    height: 15rem;
+    width: 17rem;
+    background-color: #f1f2f6;
+}
+.ticket-color {
+    height: 1rem;
+}
+.ticket-id {
+    height: 2rem;
+    padding: 0.4rem;
+}
+.task-area {
+    height: calc(100% - 2rem - 2rem - 1rem);
+    padding: 0.4rem;
+    outline: none;
+}
+.ticket-lock {
+    height: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    color: #a5b1c2;
+}
+.main-cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+    justify-content: center;
+}
